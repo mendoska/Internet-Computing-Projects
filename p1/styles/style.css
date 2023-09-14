@@ -1,0 +1,11 @@
+#headShot{
+    width: 20%;
+    height: auto;
+}
+
+.small-logo{
+    height: 30px;
+    width: 30px;
+    margin-left:3px;
+    margin-right:3px;
+}
