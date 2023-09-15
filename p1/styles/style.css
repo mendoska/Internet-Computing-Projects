@@ -1,4 +1,8 @@
 
+
+body {
+    background-color: rgba(11,211,211, 0.2);
+}
 #headShot{
     display: block;
     margin-left: auto;
@@ -20,3 +24,11 @@
 #bioText{
 color:green;
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color:rgba(248,144,231,0.7);
+    color: white;
+  }
+
