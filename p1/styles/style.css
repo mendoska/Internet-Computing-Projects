@@ -1,6 +1,9 @@
+
 #headShot{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 20%;
-    height: auto;
 }
 
 .small-logo{
@@ -8,4 +11,12 @@
     width: 30px;
     margin-left:3px;
     margin-right:3px;
+}
+
+.centered-text{
+    text-align: center;
+}
+
+#bioText{
+color:green;
 }
