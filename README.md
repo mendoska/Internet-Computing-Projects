@@ -6,4 +6,4 @@ September 16th <br>
 Resume Style Page
 Using HTML & CSS Only
 
-![]https://github.com/mendoska/Internet-Computing-Projects/blob/main/p1demo.gif
+![](https://github.com/mendoska/Internet-Computing-Projects/blob/main/p1demo.gif)
