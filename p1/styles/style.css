@@ -1,7 +1,17 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 
 
 body {
+    font-family: 'Muli', sans-serif;
     background-color: rgba(11,211,211, 0.2);
+}
+
+h1 h2 h3 h4 h5{
+    font-family: 'Quicksand', sans-serif;
 }
 #headShot{
     display: block;
@@ -23,6 +33,11 @@ body {
 
 #bioText{
 color:green;
+font-size:large;
+}
+
+.bioList{
+    font-size:large;
 }
 
 footer {
