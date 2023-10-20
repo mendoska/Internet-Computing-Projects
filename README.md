@@ -16,4 +16,4 @@ Using HTML & CSS Only
 October 1st <br>
 Resume Style Page + Bootstrap Template
 Using the following bootstrap template:
-https://startbootstrap.com/theme/freelancer
+https://startbootstrap.com/theme/freelancer 
