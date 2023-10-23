@@ -4,6 +4,13 @@ function findVals() {
     var num3 = Number(document.getElementById("num3").value);
     console.log(num1,num2,num3);
 
+
+ //checking if all 3 numbers are in 
+ if (!isNumeric(num1) || !isNumeric(num2) || !isNumeric(num3)) {
+    alert("Please enter numeric values for all fields.");
+    return; // Stop further processing
+  }
+
     //making arrays to access array methods
     const nums = [num1,num2,num3];
 
@@ -16,8 +23,8 @@ function findVals() {
     console.log(nums);
 
     //finding mean 
-    //remember to add percision & keep in mind decimal (etc)
     var mean = ((num1+num2+num3)/3);
+    mean = mean.toFixed(2);
     console.log("The mean of these 3 numbers are: " ,mean);
 
     //find max
@@ -43,6 +50,18 @@ function findVals() {
     console.log("The range of these 3 numbers are: " ,range);
 
 
+    //   document.getElementById("statusDisplay").innerHTML = "The mean of these 3 numbers are: " +mean;
+    //   document.getElementById("statusDisplay").innerHTML = "<br> The max of these 3 numbers are: " +max;
+    //   document.getElementById("statusDisplay").innerHTML = "The min of these 3 numbers are: " +min;
+    //   document.getElementById("statusDisplay").innerHTML = "The median of these 3 numbers are: " +median;
+    //   document.getElementById("statusDisplay").innerHTML = "The range of these 3 numbers are: " +range;
 
+      statusDisplay.innerHTML= `
+      Mean: ${mean}, <br>
+      Max: ${max},<br>
+      Min: ${min},<br>
+      Median: ${median},<br>
+      Range: ${range}<br>
+      `
 
 }

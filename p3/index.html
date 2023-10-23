@@ -2,6 +2,7 @@
 <html lang="en">
 
 <script src="scripts/scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"    type="text/javascript"></script><script></script>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,10 +30,10 @@
 					<!-- status of the numbers 			 -->
 					<div class="row">
 						<div class="col-sm-12">
-						  <p id="statusDisplay"></p>
+						  <h2 id="statusDisplay"></h2>
 						</div>
 					  </div>
-					<div class="booking-form">
+					<div class="booking-form" id = "form1">
 						<form>
 							<div class="col-md-4">
 								<div class="form-group">
@@ -63,6 +64,25 @@
 			</div>
 		</div>
 	</div>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+<script>
+//using to prevent auto refreshing and losing data.
+$('#form1').submit(function(e)
+{
+event.preventDefault();
+ $.ajax({
+     type : 'POST',
+     url : 'process.php',
+     data : $(this).serialize(),
+     success : function(response) {
+
+     }
+   });
+});
+
+
+</script>
+
+</body>
 
 </html>
