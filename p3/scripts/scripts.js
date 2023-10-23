@@ -1,3 +1,4 @@
+
 function findVals() {
     var num1 = Number(document.getElementById("num1").value);
     var num2 = Number(document.getElementById("num2").value);
@@ -5,11 +6,12 @@ function findVals() {
     console.log(num1,num2,num3);
 
 
- //checking if all 3 numbers are in 
+ //checking if all 3 numbers are in
  if (!isNumeric(num1) || !isNumeric(num2) || !isNumeric(num3)) {
     alert("Please enter numeric values for all fields.");
     return; // Stop further processing
   }
+
 
     //making arrays to access array methods
     const nums = [num1,num2,num3];
@@ -65,3 +67,8 @@ function findVals() {
       `
 
 }
+
+function isNumeric(value) {
+    return !isNaN(value) && !isNaN(parseFloat(value));
+  }
+
